@@ -1,4 +1,4 @@
-
+from tests.acceptance.page_model.blog_page import BlogPage
 from tests.acceptance.page_model.home_page import HomePage
 
 
