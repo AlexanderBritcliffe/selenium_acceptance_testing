@@ -16,6 +16,12 @@ def step_impl(context):
    page = BlogPage(context.driver)
    context.browser.get(page.url)
 
+@given('I am on the new post page')
+def step_impl(context):
+   context.browser = webdriver.Chrome()
+   page = NewPostPage(context.driver)
+   context.browser.get(page.url)
+
 @then('I am on the blogpage')
 def step_impl(context):
    expected_url = BlogPage(context.driver).url
